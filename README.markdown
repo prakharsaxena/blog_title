@@ -37,7 +37,6 @@ net/http
 net/http lets us obtain the body of a web page.
 
 - API: http://rubydoc.info/stdlib/net/1.9.2/Net/HTTP
-- CheatSheet: http://www.rubyinside.com/nethttp-cheat-sheet-2940.html
 
 hpricot
 ------
@@ -54,6 +53,7 @@ Hints
 ======
 
 0. Your class goes in `./lib/blog.rb`, don't change the `blog_title.rb`.
-0. The XPath for the HTML element you want to look for is at: `/html/body/div[2]/div/div[2]/div/div/h3`
 0. You'll need to install the hpricot gem: `gem install hpricot`
+0. The XPath for the HTML element you want to look for is at: `/html/body/div[2]/div/div[2]/div/div/h3`
+0. You'll see the error `./blog_title.rb:15:in '<main>': uninitialized constant Object::Blog (NameError)` and then you'll know you can start coding.
 
