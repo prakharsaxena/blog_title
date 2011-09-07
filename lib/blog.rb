@@ -16,9 +16,7 @@ class Blog
 
   def latest_title
     @uri = URI.parse(@url)
-    
     doc = open(@uri) { |f| Hpricot(f) }
     result = doc.search("/html/body/div[2]/div/div[2]/div/div/h3/").first.to_s
-    puts result
   end
 end
