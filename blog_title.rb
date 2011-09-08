@@ -5,9 +5,9 @@
 # Put your class in ./lib.blog.rb
 #
 
+require 'bundler'
+Bundler.require :default
 require 'net/http'
-require 'hpricot'
-require 'pry'
 require './lib/blog.rb'
 
 url = "http://rorcourse.tumblr.com"

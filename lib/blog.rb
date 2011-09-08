@@ -8,6 +8,7 @@ class Blog
   end
 
   def latest_title
-    result = Hpricot(Net::HTTP.get(URI.parse(@url))).search("/html/body/div[2]/div/div[2]/div/div/h3/").first.to_s
+    Hpricot(Net::HTTP.get(URI.parse(@url)))
+    .search("/html/body/div[2]/div/div[2]/div/div/h3/").first.to_s
   end
 end
